@@ -8,8 +8,8 @@ return require('packer').startup(function(use)
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
     requires = {
-      {'nvim-lua/plenary.nvim'},
-      {'andrew-george/telescope-themes'}
+      { 'nvim-lua/plenary.nvim' },
+      { 'andrew-george/telescope-themes' }
     }
   }
   use { 'nvim-telescope/telescope-ui-select.nvim' }
@@ -50,5 +50,10 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use { 'nvimtools/none-ls.nvim' }
+  use {
+    'nvimtools/none-ls.nvim',
+    requires = {
+      { 'nvimtools/none-ls-extras.nvim' },
+    }
+  }
 end)
