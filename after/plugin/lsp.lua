@@ -7,4 +7,4 @@ vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, {})
 
 lsp.lua_ls.setup {}
 
--- lsp.tsserver.setup {}
+lsp.tsserver.setup {}
