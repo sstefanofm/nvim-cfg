@@ -65,6 +65,11 @@ return require('packer').startup(function(use)
   }
 
   use {
-    'hrsh7th/nvim-cmp'
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+      'rafamadriz/friendly-snippets',
+    }
   }
 end)
