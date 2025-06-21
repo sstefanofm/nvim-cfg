@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/stf/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/stf/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/stf/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",

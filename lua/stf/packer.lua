@@ -63,4 +63,8 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons'
     }
   }
+
+  use {
+    'hrsh7th/nvim-cmp'
+  }
 end)
