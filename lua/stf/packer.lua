@@ -7,8 +7,12 @@ return require('packer').startup(function(use)
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = {
+      {'nvim-lua/plenary.nvim'},
+      {'andrew-george/telescope-themes'}
+    }
   }
+  use { 'nvim-telescope/telescope-ui-select.nvim' }
 
   use {
     'rose-pine/neovim',
