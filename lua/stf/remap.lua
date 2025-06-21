@@ -17,5 +17,3 @@ map('n', '<leader>Y', '"+Y')
 
 -- replace word under cursor
 map('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-
-map('n', '<C-b>', ':Neotree filesystem reveal right<CR>')
