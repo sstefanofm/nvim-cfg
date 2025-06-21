@@ -56,4 +56,11 @@ return require('packer').startup(function(use)
       { 'nvimtools/none-ls-extras.nvim' },
     }
   }
+
+  use {
+    'goolord/alpha-nvim',
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    }
+  }
 end)
