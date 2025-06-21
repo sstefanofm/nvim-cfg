@@ -1,0 +1,3 @@
+require("stf")
+
+print("hello")
