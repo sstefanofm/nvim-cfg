@@ -1,1 +1,1 @@
-require("stf")
+require 'stf'
