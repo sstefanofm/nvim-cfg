@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/stf/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/stf/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
   cmp_luasnip = {
     loaded = true,
     path = "/home/stf/.local/share/nvim/site/pack/packer/start/cmp_luasnip",

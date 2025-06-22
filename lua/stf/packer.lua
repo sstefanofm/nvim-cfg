@@ -72,4 +72,5 @@ return require('packer').startup(function(use)
       'rafamadriz/friendly-snippets',
     }
   }
+  use { 'hrsh7th/cmp-nvim-lsp' }
 end)
