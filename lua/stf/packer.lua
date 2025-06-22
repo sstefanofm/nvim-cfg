@@ -75,4 +75,6 @@ return require('packer').startup(function(use)
   use { 'hrsh7th/cmp-nvim-lsp' }
 
   use { 'mfussenegger/nvim-jdtls' }
+
+  use { 'lewis6991/gitsigns.nvim' }
 end)
