@@ -1,4 +1,14 @@
 vim.keymap.set('n', '<C-n>', ':Neotree filesystem toggle right<CR>')
+vim.keymap.set('n', '<leader>n', function()
+  local path = vim.fn.expand('%:p:h')
+  require 'neo-tree.command'.execute {
+    source = "filesystem",
+    action = "show",
+    position = "right",
+    reveal = true,
+    dir = path,
+  }
+end, { desc = "Neo-tree: Focus current directory" })
 vim.keymap.set('n', '<C-g>', ':Neotree git_status focus float<CR>')
 vim.keymap.set('n', '<C-b>', ':Neotree buffers focus float<CR>')
 
