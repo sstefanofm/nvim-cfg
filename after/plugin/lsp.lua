@@ -10,6 +10,10 @@ lsp.lua_ls.setup {
   capabilities = capabilities
 }
 
+lsp.clangd.setup {
+  capabilities = capabilities
+}
+
 lsp.tsserver.setup {
   capabilities = capabilities
 }
