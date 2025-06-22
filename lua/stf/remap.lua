@@ -22,3 +22,8 @@ map('n', '<C-h>', ':wincmd h<CR>')
 map('n', '<C-j>', ':wincmd j<CR>')
 map('n', '<C-k>', ':wincmd k<CR>')
 map('n', '<C-l>', ':wincmd l<CR>')
+
+-- move between buffers
+map('n', '<Tab>', ':bn<CR>')
+map('n', '<S-Tab>', ':bp<CR>')
+map('n', '<leader>q', ':bd<CR>')
