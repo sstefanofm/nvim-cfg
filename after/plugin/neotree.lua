@@ -1,4 +1,4 @@
-vim.keymap.set('n', '<C-n>', ':Neotree filesystem focus right<CR>')
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem toggle right<CR>')
 vim.keymap.set('n', '<C-g>', ':Neotree git_status focus float<CR>')
 vim.keymap.set('n', '<C-b>', ':Neotree buffers focus float<CR>')
 
@@ -29,7 +29,7 @@ require 'neo-tree'.setup {
             use_float = true,
             use_image_nvim = true,
           }
-        }
+        },
       }
     },
   },
