@@ -16,3 +16,9 @@ map('n', '<leader>Y', '"+Y')
 
 -- replace word under cursor
 map('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- move between panes
+map('n', '<C-h>', ':wincmd h<CR>')
+map('n', '<C-j>', ':wincmd j<CR>')
+map('n', '<C-k>', ':wincmd k<CR>')
+map('n', '<C-l>', ':wincmd l<CR>')
