@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/stf/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["image.nvim"] = {
+    loaded = true,
+    path = "/home/stf/.local/share/nvim/site/pack/packer/start/image.nvim",
+    url = "https://github.com/3rd/image.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/stf/.local/share/nvim/site/pack/packer/start/lualine.nvim",
