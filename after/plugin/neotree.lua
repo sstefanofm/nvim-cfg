@@ -1,18 +1,37 @@
-vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal right<CR>')
-vim.keymap.set('n', '<C-g>', ':Neotree git_status reveal float<CR>')
-vim.keymap.set('n', '<C-b>', ':Neotree buffers reveal float<CR>')
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem focus right<CR>')
+vim.keymap.set('n', '<C-g>', ':Neotree git_status focus float<CR>')
+vim.keymap.set('n', '<C-b>', ':Neotree buffers focus float<CR>')
 
 require 'neo-tree'.setup {
-  window = {
-    mappings = {
-      ['P'] = {
-        'toggle_preview',
-        config = {
-          use_float = true,
-          use_image_nvim = true,
+  filesystem = {
+    commands = {
+      open_and_close_neotree = function(state)
+        require 'neo-tree.sources.filesystem.commands'.open(state)
+
+        local tree = state.tree
+        local success, node = pcall(tree.get_node, tree)
+
+        if not success then
+          return
+        end
+
+        if node.type == 'file' then
+          require 'neo-tree.command'.execute({ action = 'close' })
+        end
+      end
+    },
+    window = {
+      mappings = {
+        ['<CR>'] = 'open_and_close_neotree',
+        ['P'] = {
+          'toggle_preview',
+          config = {
+            use_float = true,
+            use_image_nvim = true,
+          }
         }
       }
-    }
+    },
   },
   git_status = {
     window = {
