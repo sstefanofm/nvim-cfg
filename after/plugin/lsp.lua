@@ -8,11 +8,14 @@ vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, {})
 vim.lsp.config('lua_ls', {
   capabilities = capabilities
 })
+vim.lsp.enable('lua_ls')
 
 vim.lsp.config('clangd', {
   capabilities = capabilities
 })
+vim.lsp.enable('clangd')
 
 vim.lsp.config('ts_ls', {
   capabilities = capabilities
 })
+vim.lsp.enable('ts_ls')
