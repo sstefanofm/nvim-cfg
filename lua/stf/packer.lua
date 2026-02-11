@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
   }
   use { 'nvim-telescope/telescope-ui-select.nvim' }
 
+  -- themes
   use {
     'rose-pine/neovim',
     as = 'rose-pine',
@@ -21,6 +22,10 @@ return require('packer').startup(function(use)
   use {
     'nyoom-engineering/oxocarbon.nvim',
     as = 'oxocarbon',
+  }
+  use {
+    'shaunsingh/nord.nvim',
+    as = 'nord',
   }
 
   use {
