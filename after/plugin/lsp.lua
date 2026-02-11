@@ -1,4 +1,3 @@
-local lsp = require 'lspconfig'
 local capabilities = require 'cmp_nvim_lsp'.default_capabilities()
 
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
@@ -6,14 +5,14 @@ vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
 vim.keymap.set('n', 'K',  vim.lsp.buf.hover, {})
 vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, {})
 
-lsp.lua_ls.setup {
+vim.lsp.config('lua_ls', {
   capabilities = capabilities
-}
+})
 
-lsp.clangd.setup {
+vim.lsp.config('clangd', {
   capabilities = capabilities
-}
+})
 
-lsp.tsserver.setup {
+vim.lsp.config('ts_ls', {
   capabilities = capabilities
-}
+})
