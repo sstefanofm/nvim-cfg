@@ -19,3 +19,8 @@ vim.lsp.config('ts_ls', {
   capabilities = capabilities
 })
 vim.lsp.enable('ts_ls')
+
+vim.lsp.config('pyright', {
+  capabilities = capabilities,
+})
+vim.lsp.enable('pyright')
