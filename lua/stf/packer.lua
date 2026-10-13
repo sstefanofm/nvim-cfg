@@ -6,7 +6,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    'nvim-telescope/telescope.nvim',
     requires = {
       { 'nvim-lua/plenary.nvim' },
       { 'andrew-george/telescope-themes' }
@@ -29,11 +29,9 @@ return require('packer').startup(function(use)
   }
 
   use {
-    'nvim-treesitter/nvim-treesitter',
-    run = function()
-      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-      ts_update()
-    end,
+    "nvim-treesitter/nvim-treesitter",
+    branch = "main",
+    run = ":TSUpdate",
   }
 
   use 'tpope/vim-fugitive'
