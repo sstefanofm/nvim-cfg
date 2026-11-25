@@ -96,4 +96,11 @@ return require('packer').startup(function(use)
       require("toggleterm").setup {}
     end
   }
+
+  use {
+    'folke/flash.nvim',
+    config = function()
+        require("flash").setup {}
+    end
+  }
 end)
